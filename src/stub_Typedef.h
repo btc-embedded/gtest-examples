@@ -1,0 +1,3 @@
+typedef _Bool tBool;
+
+
