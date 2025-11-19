@@ -13,20 +13,18 @@
 // ----------- Outputs ----------
 // leds[3]              : tBool[3]      // LED indicators
 // heatingCoil          : tTemperature  // Heating coil temperature
+// requestedPower               : tPower             // Requested power level
 
 // ----------- Parameters for Temperatures -----------
 // TemperatureParams.low        : tTemperatureParams // Low Temperature
 // TemperatureParams.medium     : tTemperatureParams // Medium Temperature
 // TemperatureParams.high       : tTemperatureParams // High Temperature
-// requestedPower               : tPower             // Requested power level
 
 // ----------- FunctionCall Graph -----------
 /*
 seat_heating_controller()
     ├─ check_conditions()
     ├─ getButtonPressed() [external]
-    ├─ handle_temperature_stage()
-    │       └─ (updates leds[], returns heatingCoilTemp)
     └─ request_power()
 */
 

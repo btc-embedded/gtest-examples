@@ -28,7 +28,6 @@ protected:
 // Tests for check_conditions function
 // ============================================================
 
-// BTC_LINK_TO_REQ(subterra:data-service:objects:/default/seatheater${WorkItem}SEAT-79)
 TEST(CheckConditionsTestSuite, Test_CheckConditions_ReturnsTrue) {
     tBool result = check_conditions(true, OK, NO_ERROR);
     EXPECT_TRUE(result);
@@ -44,12 +43,15 @@ TEST(CheckConditionsTestSuite, Test_CheckConditions_ReturnsTrue) {
 // Tests for seat_heating_controller main function
 // ============================================================
 
-// BTC_LINK_TO_REQ(subterra:data-service:objects:/default/seatheater${WorkItem}SEAT-82)
-// BTC_LINK_TO_REQ(subterra:data-service:objects:/default/seatheater${WorkItem}SEAT-84)
 TEST_F(SeatHeatingControllerTestSuite, Test_Controller_CyclesThroughAllStages) {
     seatOccupied = true;
     powerMgtState = OK;
     errorStatus = NO_ERROR;
+
+    // No press: 0 -> 0
+    seat_heating_controller();
+    EXPECT_EQ(state.temperatureStage, 0);
+    EXPECT_EQ(heatingCoil, 0);
     
     // First press: 0 -> 1
     getButtonPressed_stub = true;
