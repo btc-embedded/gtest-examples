@@ -7,10 +7,11 @@ This is an example project that demonstrates use GoogleTest for unit testing in 
 
 
 ## Directory Structure
-- `src/`: The source code files of the seat heating controller example with public headers in the `include/` subdirectory.
-- `test/`: The GoogleTest unit test files for the seat heating controller.
+- `examples/`: Root directory for example projects.
+    - `seat-heater-c/`:
+        - `src/`: The source code files of the seat heating controller example with public headers in the `include/` subdirectory.
+        - `test/`: The GoogleTest unit test files for the seat heating controller.
 - `CMakeLists.txt`: The CMake build configuration file.
-- `build.bat`: A batch script to build the project using CMake on Windows.
 - `.vscode/`: Visual Studio Code configuration files.
 - `.btcep/`: BTC EmbeddedTester metadata and configuration files.
 
