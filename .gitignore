@@ -43,3 +43,4 @@
 # Ignore build output
 Build/
 .btc/
+.btcep/
