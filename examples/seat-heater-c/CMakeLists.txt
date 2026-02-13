@@ -2,10 +2,10 @@ cmake_minimum_required(VERSION 3.16)
 project(seat_heating_controller LANGUAGES C CXX)
 
 # C/C++ standard and compiler settings
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD 17)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS OFF)
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Compiler warnings
