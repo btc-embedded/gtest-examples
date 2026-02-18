@@ -133,7 +133,7 @@ if(BUILD_TESTING)
   gtest_discover_tests(seat_heating_tests)
   
   # Add custom target for running tests
-  add_custom_target(run_tests
+  add_custom_target(run_c_tests
     COMMAND seat_heating_tests
     DEPENDS seat_heating_tests
     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
@@ -161,7 +161,7 @@ if(BUILD_TESTING)
                   --exclude-unreachable-branches
                   --exclude-throw-branches
           WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
-          DEPENDS run_tests
+          DEPENDS run_c_tests
           COMMENT "Generating code coverage report..."
         )
       endif()
