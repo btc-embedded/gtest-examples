@@ -17,7 +17,7 @@ endif()
 
 # Source and include directories
 set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/src")
-set(INC_DIR "${SRC_DIR}/includes")
+set(INC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
 # Sources and headers
 set(SOURCES
@@ -25,7 +25,7 @@ set(SOURCES
 )
 
 set(PUBLIC_HEADERS
-  "${SRC_DIR}/seat_heating_controller.h"
+  "${INC_DIR}/seat_heating_controller.h"
 )
 
 # --- Static library target ---

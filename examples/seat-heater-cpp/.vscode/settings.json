@@ -1,4 +1,5 @@
 {
-    "com-btces.epvsci.mockcclocation": "C:\\Program Files\\BTC\\vscode\\ep25.3p0\\bin\\x64",
-    "com-btces.epvsci.TestingViewDebugConfiguration": "(Windows) Launch"
+    "com-btces.epvsci.TestingViewDebugConfiguration": "(Windows) Launch",
+    "com-btces.epvsci.mockcclocation": "c:\\Users\\developer\\.vscode\\extensions\\btces.btc-embedded-vsci-backend-26.1.0\\mockcc",
+    "btces.jre.javaExecutable": "c:\\Users\\developer\\.vscode\\extensions\\btces.jre-extension-21.0.213\\jre\\bin\\java.exe"
 }
