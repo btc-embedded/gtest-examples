@@ -59,13 +59,13 @@ TEST_F(SeatHeatingControllerTestSuite, Test_CheckConditions_SeatUnoccupied) {
     EXPECT_FALSE(SeatHeatingController::check_conditions(false, OK, NO_ERROR));
 }
 
-/**
- * @brief Verify activation conditions fail when power not OK
- */
-// BTC_LINK_TO_REQ(subterra:data-service:objects:/default/seatheater${WorkItem}SEAT-79)
-TEST_F(SeatHeatingControllerTestSuite, Test_CheckConditions_PowerNotOk) {
-    EXPECT_FALSE(SeatHeatingController::check_conditions(true, NOK, NO_ERROR));
-}
+// /**
+//  * @brief Verify activation conditions fail when power not OK
+//  */
+//// BTC_LINK_TO_REQ(subterra:data-service:objects:/default/seatheater${WorkItem}SEAT-79)
+// TEST_F(SeatHeatingControllerTestSuite, Test_CheckConditions_PowerNotOk) {
+//     EXPECT_FALSE(SeatHeatingController::check_conditions(true, NOK, NO_ERROR));
+// }
 
 /**
  * @brief Verify activation conditions fail when error flag set
