@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.31)
 project(seat_heating_controller LANGUAGES C CXX)
 
 # C/C++ standard and compiler settings
